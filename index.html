@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0ea5e9">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
   <meta name="description" content="لعبة تفاعلية لتعلّم الأنماط العددية بالزيادة والنقصان للمرحلة الابتدائية.">
   <title>مغامرات الأنماط العددية</title>
   <link rel="manifest" href="manifest.webmanifest">
@@ -13,6 +16,14 @@
 </head>
 <body>
   <main id="app" class="app-shell">
+    <div class="app-brandbar" aria-label="هوية التطبيق">
+      <img class="brand-logo" src="assets/interactive-forum-logo.png" alt="شعار ملتقى التعليم التفاعلي">
+      <div class="brand-copy">
+        <strong>ملتقى التعليم التفاعلي</strong>
+        <span>مغامرات الأنماط العددية • تعلّم بالاكتشاف واللعب</span>
+      </div>
+      <div class="device-badge" aria-hidden="true">📱 · 📟 · 💻</div>
+    </div>
     <section id="homeScreen" class="screen active" aria-labelledby="gameTitle">
       <div class="sky-decor" aria-hidden="true"><span>☁️</span><span>☁️</span><span>✨</span></div>
       <header class="hero">
@@ -42,7 +53,6 @@
         <div class="preview-rule">القاعدة: +٣</div>
       </section>
 
-      <footer>أ/ فاطمة هزازي</footer>
     </section>
 
     <section id="stagesScreen" class="screen" aria-labelledby="stagesTitle">
@@ -106,6 +116,16 @@
       <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
       <div class="progress-wrap" aria-label="تقدم المرحلة"><div id="roundProgress" class="progress-bar"></div></div>
     </section>
+
+    <footer class="app-footer" aria-label="تذييل التطبيق">
+      <img src="assets/interactive-forum-logo.png" alt="" aria-hidden="true">
+      <div>
+        <strong>أ/ فاطمة هزازي</strong>
+        <span>ملتقى التعليم التفاعلي</span>
+        <span class="footer-dot">•</span>
+        <span>ملتقى معلمي ومعلمات الرياضيات</span>
+      </div>
+    </footer>
 
     <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal-card">
